@@ -1,0 +1,227 @@
+/* ========================================
+ * CSS written here will override Tachyons
+ * ======================================== */
+
+.background {
+  background: #c70cff;
+  background-size: cover;
+}
+
+.header {
+  font-family: "Playfair Display", serif, Helvetica;
+  font: bold;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 50px;
+  color: #c70cff;
+  line-height: 60px;
+  font-size: 50px;
+  background-color: #02f2ff;
+
+  /* position: fixed; */
+}
+@media (min-width: 1200px) {
+  .header {
+    font-size: 70px;
+    line-height: 80px;
+    padding-left: 50px;
+  }
+}
+
+.bodyindent {
+  text-indent: 20px;
+}
+
+@media (min-width: 1200px) {
+  .bodyindent {
+    text-indent: 50px;
+  }
+}
+
+.bodyindentsmall {
+  text-indent: 10px;
+}
+
+@media (min-width: 1200px) {
+  .bodyindent {
+    text-indent: 30px;
+  }
+}
+
+.side1 {
+  font-family: Helvetica;
+  padding-left: 20px;
+  padding-right: 25px;
+  padding-top: 20px;
+  color: #02f2ff;
+  font-size: 14px;
+  /* width: 400px; */
+}
+
+@media (min-width: 1200px) {
+  .side1 {
+    font-size: 30px;
+    padding-left: 50px;
+  }
+}
+
+.side2 {
+  font-family: Helvetica;
+  padding-right: 50px;
+  padding-left: 20px;
+  color: #9de22d;
+  font-size: 14px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 50px;
+}
+@media (min-width: 1200px) {
+  .side2 {
+    font-size: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 5px;
+  }
+}
+@media (min-width: 950px) {
+  .side2 {
+    font-family: Helvetica;
+    padding-left: 20px;
+    padding-right: 25px;
+    padding-top: 20px;
+    color: #9de22d;
+    font-size: 16px;
+  }
+}
+@media (min-width: 600px) {
+  .side2 {
+    font-size: 16px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 50px;
+  }
+}
+
+.article {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 5px;
+}
+
+@media (min-width: 950px) {
+  .article {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 5px;
+  }
+}
+
+.mary {
+  display: grid;
+  /*does this work grid within a grid; */
+  grid-template-columns: 1fr;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-right: 25px;
+  font-family: "Playfair Display", serif, Helvetica;
+  font: bold;
+  grid-gap: 25px;
+  font-size: 30px;
+  color: #f8ffaf;
+  line-height: 1.25;
+  text-indent: -0.4125em;
+  text-align: center;
+  /* hanging-punctuation: first; */
+}
+/*MARY GRID*/
+@media (min-width: 1200px) {
+  .mary {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 600px) {
+  .mary {
+    display: grid;
+    /*does this work grid within a grid; */
+    grid-template-columns: 1fr 2fr;
+    font-size: 30px;
+  }
+}
+
+/*MARY IMAGE*/
+.maryimage {
+  width: 300px;
+  padding-bottom: 30px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 1200px) {
+  .maryimage {
+    width: 300px;
+  }
+}
+@media (min-width: 550px) {
+  .maryimage {
+    padding: 10px;
+  }
+}
+
+/*FRANK IMAGE*/
+.frank {
+  padding-bottom: 30px;
+  width: 300px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 1200px) {
+  .frank {
+    width: 350px;
+  }
+}
+@media (min-width: 1200px) {
+  .frank {
+    width: 350px;
+  }
+}
+.ad {
+  padding-bottom: 30px;
+  width: 300px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 1200px) {
+  .ad {
+    width: 350px;
+  }
+}
+
+.additionalarticle {
+  font-family: Helvetica;
+  padding-right: 50px;
+  padding-left: 20px;
+  color: #9de22d;
+  font-size: 14px;
+  padding-top: 100px;
+  padding-bottom: 20px;
+}
+
+/* @media (min-width: 1200px) {
+  .additionalarticle {
+    font-size: 0px;
+  } */
+}
+@media (min-width: 950px) {
+  .additionalarticle {
+    font-size: 16px;
+  }
+}
