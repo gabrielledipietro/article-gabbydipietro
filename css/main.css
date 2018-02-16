@@ -2,6 +2,10 @@
  * CSS written here will override Tachyons
  * ======================================== */
 
+/* * {
+   border: 1px solid red;
+ } */
+
 .background {
   background: #c70cff;
   background-size: cover;
@@ -52,7 +56,7 @@
 .side1 {
   font-family: Helvetica;
   padding-left: 20px;
-  padding-right: 25px;
+  padding-right: 20px;
   padding-top: 20px;
   color: #02f2ff;
   font-size: 14px;
@@ -68,8 +72,8 @@
 
 .side2 {
   font-family: Helvetica;
-  padding-right: 50px;
-  padding-left: 20px;
+  padding-right: 20px;
+  padding-left: 18px;
   color: #9de22d;
   font-size: 14px;
   padding-top: 20px;
@@ -90,7 +94,7 @@
   .side2 {
     font-family: Helvetica;
     padding-left: 20px;
-    padding-right: 25px;
+    padding-right: 20px;
     padding-top: 20px;
     color: #9de22d;
     font-size: 16px;
@@ -105,11 +109,11 @@
   }
 }
 
-.article {
+/* .article {
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 5px;
-}
+} */
 
 @media (min-width: 950px) {
   .article {
@@ -123,9 +127,10 @@
   display: grid;
   /*does this work grid within a grid; */
   grid-template-columns: 1fr;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  padding-right: 25px;
+  padding-top: 20px;
+  /* padding-bottom: 20px; don't need -due to side1 class*/
+  /* padding-right: 20px;
+  don't need because it's part of the side1 class that has padding of 20px*/
   font-family: "Playfair Display", serif, Helvetica;
   font: bold;
   grid-gap: 25px;
@@ -134,12 +139,14 @@
   line-height: 1.25;
   text-indent: -0.4125em;
   text-align: center;
+  /* image-orientation: center; */
   /* hanging-punctuation: first; */
 }
 /*MARY GRID*/
 @media (min-width: 1200px) {
   .mary {
-    font-size: 50px;
+    font-size: 100px;
+    padding-left: 50px;
   }
 }
 
@@ -147,8 +154,10 @@
   .mary {
     display: grid;
     /*does this work grid within a grid; */
-    grid-template-columns: 1fr 2fr;
-    font-size: 30px;
+    grid-template-columns: 1fr 1fr;
+    font-size: 40px;
+    padding-left: 50px;
+    /* text-align: right; */
   }
 }
 
@@ -156,25 +165,27 @@
 .maryimage {
   width: 300px;
   padding-bottom: 30px;
+  padding-left: 8px;
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
-
-@media (min-width: 1200px) {
-  .maryimage {
-    width: 300px;
-  }
-}
 @media (min-width: 550px) {
   .maryimage {
     padding: 10px;
+    padding-left: 30px;
+  }
+}
+@media (min-width: 1200px) {
+  .maryimage {
+    width: 400px;
   }
 }
 
 /*FRANK IMAGE*/
 .frank {
-  padding-bottom: 30px;
+  padding-bottom: 20px;
+  padding-top: 30px;
   width: 300px;
   display: block;
   margin-left: auto;
@@ -186,13 +197,10 @@
     width: 350px;
   }
 }
-@media (min-width: 1200px) {
-  .frank {
-    width: 350px;
-  }
-}
+
 .ad {
   padding-bottom: 30px;
+  padding-top: 20px;
   width: 300px;
   display: block;
   margin-left: auto;
@@ -207,21 +215,24 @@
 
 .additionalarticle {
   font-family: Helvetica;
-  padding-right: 50px;
+  padding-right: 20px;
   padding-left: 20px;
   color: #9de22d;
   font-size: 14px;
-  padding-top: 100px;
+  padding-top: 80px;
   padding-bottom: 20px;
 }
 
-/* @media (min-width: 1200px) {
-  .additionalarticle {
-    font-size: 0px;
-  } */
-}
 @media (min-width: 950px) {
   .additionalarticle {
+    font-size: 20px;
+    padding-top: 100px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .additionalarticle {
     font-size: 16px;
+    padding-top: 100px;
   }
 }
