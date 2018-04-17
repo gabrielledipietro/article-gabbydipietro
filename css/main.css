@@ -5,6 +5,34 @@
 /* * {
    border: 1px solid red;
  } */
+@font-face {
+  font-family: "neg";
+  src: url(../fonts/karloff-neg.otf);
+}
+
+/* .neg {
+  line-height: 1;
+  font-family: "neg";
+  font-size: 14pt;
+}
+
+@media (min-width: 720px) {
+  .neg {
+    font-size: 17pt;
+  }
+}
+
+@media (min-width: 910px) {
+  .neg {
+    font-size: 19pt;
+  }
+}
+
+@media (min-width: 1050px) {
+  .neg {
+    font-size: 25pt;
+  }
+} */
 
 .background {
   background: #c70cff;
@@ -12,24 +40,35 @@
 }
 
 .header {
-  font-family: "Playfair Display", serif, Helvetica;
+  font-family: "neg", serif, Helvetica;
   font: bold;
   padding-bottom: 10px;
-  padding-left: 20px;
-  padding-right: 20px;
+
   padding-top: 50px;
   color: #c70cff;
-  line-height: 60px;
-  font-size: 50px;
-  background-color: #02f2ff;
+  line-height: 1.2;
+  font-size: 45px;
+  background-color: #9de22d;
 
   /* position: fixed; */
 }
+
+@media (min-width: 450px) {
+  .header {
+    font-size: 45px;
+  }
+}
+
+@media (min-width: 590px) {
+  .header {
+    font-size: 50px;
+  }
+}
+
 @media (min-width: 1200px) {
   .header {
     font-size: 70px;
     line-height: 80px;
-    padding-left: 50px;
   }
 }
 
@@ -54,139 +93,100 @@
 }
 
 .side1 {
-  font-family: Helvetica;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 20px;
+  font-family: Helvetica, sans-serif;
+
+  /* padding-top: 20px; */
   color: #02f2ff;
-  font-size: 14px;
+  font-size: 16px;
   /* width: 400px; */
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1020px) {
+  .side1 {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 1310px) {
   .side1 {
     font-size: 30px;
-    padding-left: 50px;
   }
 }
 
 .side2 {
   font-family: Helvetica;
-  padding-right: 20px;
-  padding-left: 18px;
+
   color: #9de22d;
   font-size: 14px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-gap: 50px;
 }
-@media (min-width: 1200px) {
-  .side2 {
-    font-size: 20px;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 5px;
-  }
-}
-@media (min-width: 950px) {
-  .side2 {
-    font-family: Helvetica;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 20px;
-    color: #9de22d;
-    font-size: 16px;
-  }
-}
+
 @media (min-width: 600px) {
   .side2 {
-    font-size: 16px;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 50px;
+    font-size: 13px;
   }
 }
 
-/* .article {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-gap: 5px;
-} */
+@media (min-width: 1170px) {
+  .side2 {
+    font-size: 16px;
+  }
+}
 
-@media (min-width: 950px) {
-  .article {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-gap: 5px;
+@media (min-width: 1280px) {
+  .side2 {
+    font-size: 18px;
   }
 }
 
 .mary {
-  display: grid;
-  /*does this work grid within a grid; */
-  grid-template-columns: 1fr;
-  padding-top: 20px;
   /* padding-bottom: 20px; don't need -due to side1 class*/
   /* padding-right: 20px;
   don't need because it's part of the side1 class that has padding of 20px*/
-  font-family: "Playfair Display", serif, Helvetica;
+  font-family: "neg", serif, Helvetica;
   font: bold;
-  grid-gap: 25px;
+
   font-size: 30px;
   color: #f8ffaf;
   line-height: 1.25;
-  text-indent: -0.4125em;
+  /* text-indent: -0.4125em; */
   text-align: center;
   /* image-orientation: center; */
   /* hanging-punctuation: first; */
 }
-/*MARY GRID*/
-@media (min-width: 1200px) {
-  .mary {
-    font-size: 100px;
-    padding-left: 50px;
-  }
-}
 
 @media (min-width: 600px) {
   .mary {
-    display: grid;
-    /*does this work grid within a grid; */
-    grid-template-columns: 1fr 1fr;
-    font-size: 40px;
-    padding-left: 50px;
+    font-size: 50px;
+
     /* text-align: right; */
+  }
+}
+
+@media (min-width: 1170px) {
+  .mary {
+    font-size: 60px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .mary {
+    font-size: 70px;
   }
 }
 
 /*MARY IMAGE*/
 .maryimage {
-  width: 300px;
-  padding-bottom: 30px;
-  padding-left: 8px;
+  /* width: 300px; */
+
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
-@media (min-width: 550px) {
-  .maryimage {
-    padding: 10px;
-    padding-left: 30px;
-  }
-}
-@media (min-width: 1200px) {
-  .maryimage {
-    width: 400px;
-  }
-}
 
 /*FRANK IMAGE*/
 .frank {
-  padding-bottom: 20px;
-  padding-top: 30px;
-  width: 300px;
+  /* padding-top: 30px; */
+  /* width: 300px; */
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -194,29 +194,28 @@
 
 @media (min-width: 1200px) {
   .frank {
-    width: 350px;
+    /* width: 350px; */
   }
 }
 
 .ad {
-  padding-bottom: 30px;
-  padding-top: 20px;
-  width: 300px;
+  /* width: 300px; */
   display: block;
   margin-left: auto;
   margin-right: auto;
+  /* width: 30%; */
 }
-
-@media (min-width: 1200px) {
+/*
+@media (min-width: 815px) {
   .ad {
-    width: 350px;
+    width: 0;
   }
-}
+} */
 
 .additionalarticle {
   font-family: Helvetica;
   padding-right: 20px;
-  padding-left: 20px;
+  padding-left: 50px;
   color: #9de22d;
   font-size: 14px;
   padding-top: 80px;
